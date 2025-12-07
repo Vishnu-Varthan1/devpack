@@ -1,0 +1,17 @@
+{
+  "projectType": "react",
+  "os": "Windows",
+  "tools": ["Node.js", "npm"],
+  "installCommands": "choco install nodejs",
+  "createCommands": "npx create-react-app myapp && cd myapp && npm start",
+  "dependencies": "",
+  "extensions": ["ms-vscode.vscode-typescript-next", "bradlc.vscode-tailwindcss"],
+  "folderStructure": "myapp/\n├── public/\n│   ├── index.html\n│   └── favicon.ico\n├── src/\n│   ├── App.js\n│   ├── index.js\n│   └── components/\n└── package.json",
+  "templateFile": "react-starter.zip",
+  "quickstart": "1. Run the create command\n2. Open in VS Code\n3. Install extensions\n4. Start developing",
+  "copyBlocks": {
+    "install": "choco install nodejs",
+    "create": "npx create-react-app myapp && cd myapp && npm start",
+    "run": "cd myapp && npm start"
+  }
+}

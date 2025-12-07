@@ -1,0 +1,17 @@
+{
+  "projectType": "mern",
+  "os": "Windows",
+  "tools": ["Node.js", "npm", "MongoDB"],
+  "installCommands": "choco install nodejs mongodb",
+  "createCommands": "mkdir mern-app && cd mern-app && npx create-react-app client && mkdir server && cd server && npm init -y && npm install express cors mongoose && printf \"const express=require('express');const app=express();app.listen(5000);\" > index.js",
+  "dependencies": "",
+  "extensions": ["ms-vscode.vscode-typescript-next", "ms-vscode.vscode-json", "mongodb.mongodb-vscode"],
+  "folderStructure": "mern-app/\n├── client/\n│   ├── public/\n│   ├── src/\n│   └── package.json\n└── server/\n    ├── index.js\n    ├── models/\n    ├── routes/\n    └── package.json",
+  "templateFile": "mern-starter.zip",
+  "quickstart": "1. Run the create command\n2. Start MongoDB\n3. Run server: cd server && node index.js\n4. Run client: cd client && npm start",
+  "copyBlocks": {
+    "install": "choco install nodejs mongodb",
+    "create": "mkdir mern-app && cd mern-app && npx create-react-app client && mkdir server && cd server && npm init -y && npm install express cors mongoose && printf \"const express=require('express');const app=express();app.listen(5000);\" > index.js",
+    "run": "cd mern-app/server && node index.js && cd ../client && npm start"
+  }
+}

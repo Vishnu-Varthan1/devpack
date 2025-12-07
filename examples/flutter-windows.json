@@ -1,0 +1,17 @@
+{
+  "projectType": "flutter",
+  "os": "Windows",
+  "tools": ["Flutter", "Dart"],
+  "installCommands": "choco install flutter",
+  "createCommands": "flutter create myflutterapp && cd myflutterapp && flutter run",
+  "dependencies": "",
+  "extensions": ["dart-code.flutter", "dart-code.dart-code"],
+  "folderStructure": "myflutterapp/\n├── lib/\n│   ├── main.dart\n│   └── screens/\n├── android/\n├── ios/\n├── web/\n└── pubspec.yaml",
+  "templateFile": "flutter.zip",
+  "quickstart": "1. Run the create command\n2. Connect device or start emulator\n3. Run: flutter run\n4. Start developing",
+  "copyBlocks": {
+    "install": "choco install flutter",
+    "create": "flutter create myflutterapp && cd myflutterapp && flutter run",
+    "run": "cd myflutterapp && flutter run"
+  }
+}

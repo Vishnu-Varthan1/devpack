@@ -1,0 +1,17 @@
+{
+  "projectType": "nextjs",
+  "os": "macOS",
+  "tools": ["Node.js", "npm"],
+  "installCommands": "brew install node",
+  "createCommands": "npx create-next-app@latest mynextapp --ts --tailwind --eslint && cd mynextapp && npm run dev",
+  "dependencies": "",
+  "extensions": ["ms-vscode.vscode-typescript-next", "bradlc.vscode-tailwindcss", "ms-vscode.vscode-eslint"],
+  "folderStructure": "mynextapp/\n├── pages/\n│   ├── index.tsx\n│   └── _app.tsx\n├── components/\n├── styles/\n├── public/\n└── package.json",
+  "templateFile": "next-starter.zip",
+  "quickstart": "1. Run the create command\n2. Open in VS Code\n3. Install extensions\n4. Start developing at http://localhost:3000",
+  "copyBlocks": {
+    "install": "brew install node",
+    "create": "npx create-next-app@latest mynextapp --ts --tailwind --eslint && cd mynextapp && npm run dev",
+    "run": "cd mynextapp && npm run dev"
+  }
+}

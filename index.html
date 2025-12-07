@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevPack - One-Click Full Stack Project Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="home-screen" class="screen active">
+        <header>
+            <h1>DevPack</h1>
+            <p>Generate a complete project setup in one click.</p>
+        </header>
+        <main>
+            <div class="selection-container">
+                <div class="project-selection">
+                    <h2>Select Project Type</h2>
+                    <div class="project-cards">
+                        <div class="card" data-type="react">React</div>
+                        <div class="card" data-type="mern">MERN</div>
+                        <div class="card" data-type="fullstack">Full Stack</div>
+                        <div class="card" data-type="node-api">Node API</div>
+                        <div class="card" data-type="nextjs">Next.js</div>
+                        <div class="card" data-type="python-ai">Python AI</div>
+                        <div class="card" data-type="flutter">Flutter</div>
+                    </div>
+                </div>
+                <div class="os-detection">
+                    <h2>Operating System</h2>
+                    <p id="os-display">Detecting...</p>
+                </div>
+            </div>
+            <button id="generate-btn" disabled>Generate DevPack</button>
+        </main>
+    </div>
+
+    <div id="output-screen" class="screen">
+        <header>
+            <h1>Your DevPack</h1>
+            <button id="back-btn">← Back to Home</button>
+        </header>
+        <main>
+            <div class="output-container">
+                <section class="output-section">
+                    <h2>Tools Required</h2>
+                    <ul id="tools-list"></ul>
+                </section>
+                <section class="output-section">
+                    <h2>Install Commands</h2>
+                    <div class="command-block">
+                        <pre id="install-commands"></pre>
+                        <button class="copy-btn" data-target="install-commands">Copy</button>
+                    </div>
+                </section>
+                <section class="output-section">
+                    <h2>Project Creation Command</h2>
+                    <div class="command-block">
+                        <pre id="create-commands"></pre>
+                        <button class="copy-btn" data-target="create-commands">Copy</button>
+                    </div>
+                </section>
+                <section class="output-section">
+                    <h2>Dependencies</h2>
+                    <div class="command-block">
+                        <pre id="dependencies"></pre>
+                        <button class="copy-btn" data-target="dependencies">Copy</button>
+                    </div>
+                </section>
+                <section class="output-section">
+                    <h2>VS Code Extensions</h2>
+                    <ul id="extensions-list"></ul>
+                </section>
+                <section class="output-section">
+                    <h2>Folder Structure</h2>
+                    <pre id="folder-structure"></pre>
+                </section>
+                <section class="output-section">
+                    <h2>Quickstart Guide</h2>
+                    <ol id="quickstart-list"></ol>
+                </section>
+                <section class="output-section">
+                    <button id="download-template-btn">Download Starter Template</button>
+                    <button id="copy-all-btn">Copy All Commands</button>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <div id="download-screen" class="screen">
+        <header>
+            <h1>Download Templates</h1>
+            <button id="back-to-output-btn">← Back to Output</button>
+        </header>
+        <main>
+            <div class="download-container">
+                <div class="download-card">
+                    <h3>React Starter</h3>
+                    <button class="download-btn" data-template="react-starter.zip">Download</button>
+                </div>
+                <div class="download-card">
+                    <h3>MERN Starter</h3>
+                    <button class="download-btn" data-template="mern-starter.zip">Download</button>
+                </div>
+                <div class="download-card">
+                    <h3>Full Stack Starter</h3>
+                    <button class="download-btn" data-template="fullstack.zip">Download</button>
+                </div>
+                <div class="download-card">
+                    <h3>Node API Starter</h3>
+                    <button class="download-btn" data-template="api-starter.zip">Download</button>
+                </div>
+                <div class="download-card">
+                    <h3>Next.js Starter</h3>
+                    <button class="download-btn" data-template="next-starter.zip">Download</button>
+                </div>
+                <div class="download-card">
+                    <h3>Python AI Starter</h3>
+                    <button class="download-btn" data-template="python-ai.zip">Download</button>
+                </div>
+                <div class="download-card">
+                    <h3>Flutter Starter</h3>
+                    <button class="download-btn" data-template="flutter.zip">Download</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

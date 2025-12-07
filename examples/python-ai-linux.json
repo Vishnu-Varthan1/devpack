@@ -1,0 +1,17 @@
+{
+  "projectType": "python-ai",
+  "os": "Linux",
+  "tools": ["Python", "pip"],
+  "installCommands": "sudo apt install python3 python3-pip",
+  "createCommands": "mkdir ai-app && cd ai-app && python -m venv venv && source venv/bin/activate || venv\\Scripts\\activate && pip install openai flask && echo \"from flask import Flask; app=Flask(__name__); @app.route('/')\ndef home(): return 'AI App Ready'; app.run()\" > app.py && python app.py",
+  "dependencies": "",
+  "extensions": ["ms-python.python", "ms-python.vscode-pylance"],
+  "folderStructure": "ai-app/\n├── venv/\n├── app.py\n├── requirements.txt\n└── models/",
+  "templateFile": "python-ai.zip",
+  "quickstart": "1. Run the create command\n2. Activate venv: source venv/bin/activate\n3. Run: python app.py\n4. Access at http://localhost:5000",
+  "copyBlocks": {
+    "install": "sudo apt install python3 python3-pip",
+    "create": "mkdir ai-app && cd ai-app && python -m venv venv && source venv/bin/activate || venv\\Scripts\\activate && pip install openai flask && echo \"from flask import Flask; app=Flask(__name__); @app.route('/')\ndef home(): return 'AI App Ready'; app.run()\" > app.py && python app.py",
+    "run": "cd ai-app && source venv/bin/activate && python app.py"
+  }
+}
